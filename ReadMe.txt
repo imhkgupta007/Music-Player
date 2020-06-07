@@ -1,0 +1,1 @@
+This is a simple 2-page music player project using CSS and HTML only.

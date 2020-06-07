@@ -1,0 +1,689 @@
+/*************Universal Settings**********/
+
+* {
+	font-family: sans-serif;
+	background-color: black;
+	color: white;
+}
+
+/***************CSS Variable***************/
+
+:root {
+	--border-color : white;
+}
+
+/*******Remove Scrollbar from Chrome*******/
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+/******************************************/
+/*                 Header                 */
+/******************************************/
+
+#header-container {
+	display: flex;
+	height: 80px;
+	width: 99%;
+}
+
+/* LOGO */
+#header-container img{
+	margin: 10px;
+	border-radius: 50%;
+}
+
+#header-container span {
+	color: white;
+	font-style: italic;
+	position: relative;
+	top: 25px;
+}
+
+/* Favourite Tab */
+.head2 a {
+	margin: 15px 100px;
+	display: inline;
+	position: absolute;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* Search Box */
+.head3 {
+	margin: 30px auto;
+	margin-right: 100px;
+}
+
+.head3 input[type='text'] {
+	border: none;
+	font-size: 15px;
+	font-family: Arial;
+	padding: 3px 30px 3px 30px;
+	border-radius: 5px;
+	background-color: #7d83a58c;
+	background-image: url(images/search1.png),url(images/speaker1.png);
+	background-position: left,right;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+/* Notifiation and Profile Picture */
+.head4, .head5 {
+	margin-top: 10px;
+}
+
+/******************************************/
+/*              Dropdown Menus            */
+/******************************************/
+
+/* Container 2 Menu */
+.drop-btn1 {
+	top: 5px !important;
+	right: 20px;
+	font-weight: bolder;
+}
+
+.drop-btn1:hover .dropdown-content {
+	display: block;
+	transition: 1 ease-in-out;
+}
+
+/*Aside Playlist Menu */
+.drop-btn2 {
+	position: absolute;
+	right: 0;
+	float: left; 
+	margin-right: 15%;
+}
+
+.drop-btn2:hover .dropdown-content {
+	display: block;
+}
+
+/* Hamburger Button Menu */
+.ham-btn {
+	position: absolute;
+	right: 70px;
+	margin-top: 2.5%;
+	cursor: pointer;
+}
+
+.ham-btn i {
+	position: relative;
+	font-size: 150%;
+	display: none;
+}
+
+.ham-btn:hover .dropdown-content {
+	display: block;
+}
+
+/* Menu Content Properties */
+.dropdown-content {
+	cursor: pointer;
+	display: none;
+	margin-left: -90px;
+	position: absolute;
+	min-width: 115px;
+	line-height: 5px;
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	font-size: 12px;
+	font-weight: initial;
+	background-color: white;
+	padding: 10px;
+	display: block;
+	text-decoration: none;
+}
+
+.dropdown-content a:hover {
+	background-color: lightgrey;
+}
+
+/*********************************************/
+/*               Page Content                */
+/*********************************************/
+
+#content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*********************************************/
+/*               Main Section                */
+/*********************************************/
+
+main {
+	width: 60%;
+	left: 6%;
+	position: absolute;
+	height: 86.5vh;
+}
+
+/* Container 1(Carousel) */
+
+#container1 {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	padding-top: 15px;
+}
+
+#container1 img {
+	width: 220px;
+	height: 170px;
+	cursor: pointer;
+	margin: 15px 20px;
+	border: 3px solid transparent;
+}
+
+#container1 div img:hover {
+	transition: .4s ease-in-out; 
+}
+
+#container1 img:hover {
+	transform: scale(1.4,1.2);
+	z-index: 1;	
+	border-color: darkgrey;
+}
+
+/* Container 2(Latest Release) */
+
+#container2 {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+}
+
+/* Main div only */
+#container2 > div{
+	padding: 5px;
+	width: 23rem;
+	height: 100px;
+	margin-bottom: 20px;
+	position: relative;
+	display: inline-block;
+	border: 2px solid var(--border-color);
+}
+
+/*Direct child selector(>) is used to prevent said action happening from other divs provided inside main div */
+/* Record Content Position inside main div */
+#container2 > div span {
+	position: absolute;
+}
+
+#container2 i{
+	background-color: transparent;
+}
+
+#container2 p {
+	color: #737373;
+	font-size: 13px;
+}
+
+#container2 img {
+	width: 100px;
+	height: 100px;
+	background-size: contain;
+	padding-right: 10px;
+}
+
+/*Direct child selector(>) is used to prevent said action happening from other divs provided inside main div */
+#container2 div> a:hover img {
+	opacity: 0.3;
+	transition: 0.2s ease-in-out;
+}
+
+#container2 div> a:hover .overlay {
+	display: block;
+	top: 42px;
+	left: 42px;
+}
+
+/* Overlay for icon */
+.overlay {
+	display: none;
+	background-color: transparent;
+	position: absolute;
+}
+
+/* Container 3(Popular Artist)
+/* This div leads to the dedicted page for artist Alan Walker*/
+
+#container3 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#container3 div{
+	position: relative;
+}
+
+#container3 img {
+	width: 125px;
+	height: 125px;
+	background-size: contain;
+	border: 5px solid transparent;
+	border-radius: 50%;
+}
+
+#container3 div:hover img {
+	opacity: 0.3;
+	transition: 0.2s ease-in-out;
+	border-color: var(--border-color);
+}
+
+#container3 div:hover .overlay {
+	display: block;
+	top: 55px;
+	left: 55px;
+	border-radius: 50%;
+}
+
+#container3 i {
+	position: relative;
+	border-radius: 50%;
+	font-size: 150%;
+}
+
+/* Container 4(Popular Channels) */
+
+#container4 {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: #020238;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+#container4 a {
+	background-color: transparent;
+}
+
+#container4 div {
+	width: 100px;
+	height: 100px;
+	border: 5px solid transparent;
+	border-radius: 50%;
+	margin: 10px;
+	cursor: pointer;
+}
+
+#container4 img {
+	width: 100px;
+	height: 100px;
+	background-size: contain;
+	border-radius: 50%;
+}
+
+#container4 div:hover {
+	transform: scale(1.2);
+	transition: 0.3s ease-in-out;
+	border-color: #646262;
+}
+
+/* Container 5, 6, 7 */
+
+#container5, #container6, #container7{
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	position: relative;
+	margin-top: 20px;
+}
+
+/* Container5 div settings */
+#container5 div{
+	padding-bottom: 10px;
+	position: relative;
+	overflow: hidden;	
+	border: 4px solid transparent;
+	cursor: pointer;
+}
+
+#container5 div:hover {
+	transition: border-color .3s ease-in-out;
+	border-color: #646262;
+}
+
+#container5 img {
+	width: 250px;
+	height: 150px;
+	background-size: contain;
+}
+
+/* Image inside div will zoom on hover */
+#container5 div:hover img {
+	filter: saturate(200%);
+	opacity: 0.3;
+	transform: scale(1.2);
+	transition: 0.3s ease-in-out;
+}
+
+/* To display content over divs in container5 */
+#container5 div:hover .overlay {
+	display: block;
+}
+
+#container5 span {
+	background-color: transparent;
+	top: 40%;
+	left: 35%;
+	font-size: 20px;
+	font-weight: bolder;
+	position: absolute;
+}
+
+/* Container 6,7 div settings */
+#container6 div, #container7 div {
+	position: relative;
+	overflow: hidden;	
+	margin: 10px;
+}
+
+#container6 img, #container7 img {
+	width: 100px;
+	height: 100px;
+	border: 5px solid transparent;
+	background-size: contain;
+	border-radius: 20%;
+}
+
+#container6 p, #container7 p, #container3 p {
+	text-align: center;
+	font-size: 15px;
+}
+
+/* Effect on img when we hover on div */
+#container6 div:hover img, #container7 div:hover img {
+	opacity: 0.3;
+	transition: 0.2s ease-in-out;
+	border-color: var(--border-color);
+}
+
+/* Display play Button on hovering on div */
+#container6 div:hover .overlay,#container7 div:hover .overlay {
+	display: block;
+	top: 43px;
+	left: 43px;
+	border-radius: 50%;
+}
+
+#container6 i, #container7 i {
+	position: relative;
+	border-radius: 50%;
+	font-size: 150%;
+}
+
+/******************************************/
+/*               Aside Section            */
+/******************************************/
+
+aside {
+	box-sizing: border-box;
+	width: 29%;
+	padding: 10px;
+	position: fixed;
+	border: 2px solid var(--border-color);
+	right: 2%;
+	min-width: 350px;
+}
+
+/* Songs box div */
+.playlist {
+	margin: 10px 0;
+	height: 80vh;
+	overflow: auto;
+    -ms-overflow-style: none; /* remove scrollbar from IE 10+ */
+	scrollbar-width: none; /* Removes scrollar from firefox */
+	border: 2px solid var(--border-color);
+}
+
+/* Individual Song */
+.list-item {
+	display: inline-flex;
+	align-items: center;
+	width: 94%;
+	position: relative;
+	margin: 10px 2.5%;
+	border: 1px solid var(--border-color);
+}
+
+.list-item a {
+	padding-left: 10px;
+	display: inline-flex;
+	text-decoration: none;
+}
+
+.list-item:hover {
+	transform: scale(1,1.1);
+	width: 100%;
+	margin-left: 0;
+}
+
+.playlist img{
+	height: 50px;
+	width: 50px;
+	margin: 0 20px;
+}
+
+.playlist i {
+	right: 10%;
+	position: absolute;
+}
+
+.playlist i:hover {
+	color: red;
+	cursor: pointer;
+}
+
+/******************************************/
+/*        Footer bar (Music bar)          */
+/******************************************/
+
+/* Initial state with visibility hidden*/
+#music-bar {
+	left: 15%;
+	position: fixed;
+	bottom: 0%;
+	width: 70%;
+	visibility: hidden;
+}
+
+/* When clicked on a song this id is called and music bar at botton will be displayed */
+#music-bar-display:target {
+	background-color: transparent;
+	opacity: 0.9;
+	visibility: visible;
+}
+
+/* Audio bar relative to #music-bar div */
+audio {
+	width: 100%;
+	border-radius: 30px;
+}
+
+
+/***************************************************NEW(ARTIST) PAGE SETTINGS****************************************************/
+/* Now most of the settings were similar to the previous page and hence are not written here again to avoid redundancy */
+/********************************************************************************************************************************/
+
+
+/******************************************/
+/*      Artist Information page design     /         
+/******************************************/
+
+/* Color settings */
+.col {
+	background-color: #020238;
+	color: #888888;
+}
+
+/* Main Info part of the artist */
+.artist-template {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 20px 0;
+	border: 2px solid var(--border-color);
+	position: relative;
+	padding: 20px;
+}
+
+#artist-image {
+	height: 90%;
+	min-width: 300px;
+	min-height: 200px;
+	width: 35%;
+	margin: auto;
+	box-shadow: 10px 10px 15px 3px rgba(0,0,0,1);
+}
+
+#artist-image img {
+	height: 100%;
+	width: 100%;
+	border: 2px solid var(--border-color);
+	filter: saturate(75%);
+}
+
+.artist-info {
+	margin: 20px;
+	width: 55%;
+	text-align: justify;
+}
+
+/* buttons inside artist template */
+.button {
+	border-radius: 5px;
+	background-color: transparent;
+	border: 1px solid var(--border-color);
+	font-size: 20px;
+	padding: 10px;
+	width: 150px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 10px;
+}
+
+.button span {
+	display: inline;
+	position: relative;
+	transition: 0.5s;
+	color: white;
+}
+
+/* Content after button text to be displayed only after hovering the button set initially with opacity 0 */
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	right: -10px;
+	transition: 0.5s;
+}
+
+.button:hover span {
+	padding-right: 25px;
+}
+
+/* Content after button text to be displayed only after hovering the button */
+.button:hover span:after {
+	opacity: 1;
+}
+
+/********************************************/
+/*             Artist Playlist              */
+/********************************************/
+
+/* new setting for playlist class used before in order to avoid redundancy */
+.artist {
+	position: relative;
+	margin: 20px auto;
+	overflow: visible;
+	border: none;
+}
+
+/* Properties for second icon(+) in playlist */
+.i2 {
+	right: 5% !important;
+}
+
+.artist .i2:hover {
+	color: blue;
+}
+
+/* Artist Page aside section settings */
+.artist-page-aside {
+	margin-top: -18px;
+	border: none;
+	position: absolute;
+}
+
+/*********************************************/
+/*            Responsive Settings            */
+/*********************************************/
+
+/* Media changes when screen width goes below 1100px */
+@media screen and (max-width: 1100px) {
+
+	/* The content of the web page is no longer a flex but now acts as a block */
+	#content {
+		display: block;
+	}
+
+	/* Main content (Left side) with get a width boost from 60% to 90% of the screen */
+	main {
+		width: 90%;
+		height: 100%;
+		float: none;
+		position: relative;
+	}
+
+	/* Aside section will go downstairs and gets a width boost from 29% to 90% of the screen */
+	aside {
+		width: 90%;
+		left: 6%;
+		float: none;
+		position: relative;
+		display: block;
+	}
+
+	/* All Playlists will now be of full height and not be related to viewport width of the screen anymore */
+	.playlist {
+		height: 100%;
+	}
+}
+
+/* Media changes when width size goes below 870px */
+@media screen and (max-width: 870px) {
+	/* Header content will be hidden */
+	.ham-content {
+		display: none;
+	}
+
+	/* Hamburger Menu Icon will be displayed with header content in it */
+	.ham-btn i {
+		display: block;
+	}
+}
+

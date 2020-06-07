@@ -1,0 +1,639 @@
+<!-- This is main page(index page) -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<title>Gupta's Music Player</title>
+   <!-- Links CSS File -->
+	<link rel="stylesheet" type="text/css" href="music player.css">
+   <!-- Links Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+   <!-- Note : I have given names to the div of individual records in main containers. Those ids are not being used now but I figured it they might useful for backend purposes. Also they made code more readable and easy to understand. -->
+   <header>
+      <!-- Header Section of Webpage -->
+      <div id="header-container">
+         <!-- Logo Icon -->
+       	<div id="head1">
+            <a href="music player.html">
+               <img src="images/logo.png" alt="Logo" width="60px" height="60px">
+            </a>
+       	</div>
+       	<div>
+       		<span>Gupta's<br><b>Studios</b></span>
+       	</div>
+         <!-- Favourites Button -->
+       	<div class="head2 ham-content">
+       		<a><br>Favourites</a>
+       	</div>
+         <!-- Search Bar -->
+       	<div class="head3 ham-content">
+       		<input type="text" name="search" placeholder="Search...">
+       	</div>
+         <!-- Notification Icon -->
+       	<div class="head4 ham-content">
+       		<img src="images/bell3.png" width="40px" height="40px">
+       	</div>
+         <!-- User Image Icon -->
+       	<div class="head5 ham-content">
+       		<img src="images/icon.jpg" width="50px" height="50px">
+       	</div>
+         <!-- Hamburger Button with dropdown bar displays only in case of smaller screen (870px or less) -->
+         <div class="ham-btn">
+            <i class="fas fa-bars"></i>
+            <div class="dropdown-content">
+               <a>Favourites</a>
+               <a>Search</a>
+               <a>Notification</a>
+               <a>Profile</a>
+            </div>
+         </div>
+      </div>
+   </header>
+
+<!-- Page Content divided into 2 sections (Main and Aside) -->
+
+   <div id="content">
+
+      <!-- First Section Aligned on left side with default width at 60% -->
+		<main>
+         <!-- Carousel Conatiner -->
+			<div id="container1">
+				<div id="div11" style="margin-left: 15px;">
+					<img src="images/div11.jpg" alt="image">
+				</div>
+				<div id="div12">
+					<img src="images/div12.jpg" alt="image">
+				</div>
+				<div id="div13">
+					<img src="images/div13.jpg" alt="image">
+				</div>
+			</div>
+
+			<h4>Latest Release</h4>
+
+         <!-- Second container containing latest release songs with release date and provided with a drop button equiped with various options-->
+			<div id="container2">
+
+   			<div id="div21">
+   				<a href="#music-bar-display">
+                  <img src="images/div21.jpg" alt="image"> 
+                  <!-- Overlay function to add play icon on hovering image -->
+   					<span class="overlay">
+   						<i class="fas fa-play"></i>
+   					</span>         
+               </a>
+   				<span class="drop-btn1">
+   					...
+   					<div class="dropdown-content">
+                     <!-- Displays the music bar at the bottom of page -->
+   						<a href="#music-bar-display">Play Now</a>
+                     <!-- Pauses/Removes the music bar from the bottom of the screen -->
+                     	<a href="music player.html">Pause</a>
+   						<a>Add to Queue</a>
+   						<a>Add to Favourites</a>
+   						<a>Get Info</a>
+   					</div>
+   				</span>
+   				<span>
+   					<h5>Garmi</h5>				
+   					<p>January 2020</p>
+   				</span>					
+   			</div>
+
+   			<div id="div22">
+                  <a href="#music-bar-display">
+                     <img src="images/div22.jpg" alt="image">  
+                     <span class="overlay">
+                        <i class="fas fa-play"></i>
+                     </span>        
+                  </a>
+                  <span class="drop-btn1">
+                     ...
+                     <div class="dropdown-content">
+                        <a href="#music-bar-display">Play Now</a>
+                        <a href="music player.html">Pause</a>
+                        <a>Add to Queue</a>
+                        <a>Add to Favourites</a>
+                        <a>Get Info</a>
+                     </div>
+                  </span>
+                  <span>
+                     <h5>Yaad Piye Ki</h5>   
+                     <p>Fabruary 2020</p>
+                  </span>  
+            </div>
+               									
+   			<div id="div23">
+   				<a href="#music-bar-display">
+                  <img src="images/div23.jpg" alt="image"> 
+                  <span class="overlay">
+                  <i class="fas fa-play"></i>
+                  </span>
+               </a>
+   					<span class="drop-btn1">
+   					...
+   					<div class="dropdown-content">
+   						<a href="#music-bar-display">Play Now</a>
+                     	<a href="music player.html">Pause</a>
+   						<a>Add to Queue</a>
+   						<a>Add to Favourites</a>
+   						<a>Get Info</a>
+   					</div>
+   				</span>
+   				<span>
+   					<h5>O Saki Saki</h5>	
+   					<p>Fabruary 2020</p>
+   				</span>	
+   			</div>
+
+   			<div id="div24">
+   				<a href="#music-bar-display">
+                  <img src="images/div24.jpg" alt="image"> 
+   				<span class="overlay">
+   					<i class="fas fa-play"></i>
+   				</span>         
+               </a>
+   				<span class="drop-btn1">
+   					...
+   					<div class="dropdown-content">
+   						<a href="#music-bar-display">Play Now</a>
+                     <a href="music player.html">Pause</a>
+   						<a>Add to Queue</a>
+   						<a>Add to Favourites</a>
+   						<a>Get Info</a>
+   					</div>
+   				</span>
+   				<span>
+   					<h5>Zindagani</h5>	
+   					<p>March 2020</p>
+   				</span>	
+   			</div>
+			</div>	
+
+			<h4>Popular Artist</h4>
+
+         <!-- Popular Artist container leads to one dedicated page on Alan Walker when clicked -->
+			<div id="container3">
+				<div id="div31">
+					<a href="artist.html">
+                  <img src="images/div31.jpg" alt="image">
+                  <span class="overlay">
+                  <i class="far fa-play-circle"></i>  
+               </a>
+				</span>
+					<p>Taylor Swift</p>
+				</div>
+				<div id="div32">
+					<a href="artist.html">
+                  <img src="images/div32.jpg" alt="image">
+                  <span class="overlay">
+                  <i class="far fa-play-circle"></i>  
+               </a>
+				</span>
+					<p>Charlie Puth</p>
+				</div>
+				<div id="div33">
+					<a href="artist.html">
+                  <img src="images/div33.jpg" alt="image">
+                  <span class="overlay">
+                  <i class="far fa-play-circle"></i>  
+               </a>
+				</span>
+					<p>Guru Randhawa</p>
+				</div>
+				<div id="div34">
+					<a href="artist.html">
+                  <img src="images/div34.jpg" alt="image">
+                  <span class="overlay">
+                  <i class="far fa-play-circle"></i>  
+               </a>
+				</span>
+					<p>Eminem</p>
+				</div>
+				<div id="div35">
+					<a href="artist.html">
+                  <img src="images/div35.jpg" alt="image">
+                  <span class="overlay">
+                  <i class="far fa-play-circle"></i>  
+               </a>
+				</span>
+					<p>Billie Eilish</p>
+				</div>
+			</div>
+
+			<h4>Popular Channels</h4>
+
+         <!-- Shows various popular music channels -->
+			<div id="container4">
+				<div id="div41">
+               <a href="#music-bar-display">
+                  <img src="images/div41.jpg" alt="image">
+               </a>					
+				</div>
+				<div id="div42">
+					<a href="#music-bar-display">
+                  <img src="images/div42.jpg" alt="image">
+               </a>
+				</div>
+				<div id="div43">
+					<a href="#music-bar-display">
+                  <img src="images/div43.jpg" alt="image">
+               </a>
+				</div>
+				<div id="div44">
+					<a href="#music-bar-display">
+                  <img src="images/div44.jpg" alt="image">
+               </a>
+				</div>
+				<div id="div45">
+					<a href="#music-bar-display">
+                  <img src="images/div45.jpg" alt="image">
+               </a>
+				</div>
+				<div id="div46">
+					<a href="#music-bar-display">
+                  <img src="images/div46.jpg" alt="image">
+               </a>
+				</div>
+			</div>
+
+			<h4>Playlists</h4>
+
+         <!-- Shows various Playlists -->
+			<div id="container5">
+				<div id="div51">
+               <a href="#music-bar-display">
+   					<img src="images/div51.jpg" alt="image">
+   					<span class="overlay">
+   					Party
+   				   </span>
+               </a>
+				</div>
+				<div id="div52">
+					<a href="#music-bar-display">
+                  <img src="images/div52.jpg" alt="image">
+                  <span class="overlay">
+                  EDM
+                  </span>          
+               </a>
+				</div>
+				<div id="div53">
+               <a href="#music-bar-display">
+                  <img src="images/div53.jpg" alt="image">
+                  <span class="overlay">
+                  Road Trip
+                  </span>
+               </a>					
+				</div>
+			</div>
+
+			<h4>Latest English</h4>
+
+         <!-- Displays latest English Songs -->
+			<div id="container6">
+				<div id="div61">
+					<a href="#music-bar-display">
+                  <img src="images/div61.jpg" alt="image">
+                  <span class="overlay">
+                     <i class="far fa-play-circle"></i>
+                  </span>          
+               </a>
+					<p>On my way</p>
+				</div>
+				<div id="div62">
+					<a href="#music-bar-display">
+                  <img src="images/div62.jpg" alt="image">
+                  <span class="overlay">
+                     <i class="far fa-play-circle"></i>
+                  </span>          
+               </a>
+					<p>See you again</p>
+				</div>
+				<div id="div63">
+					<a href="#music-bar-display">
+                  <img src="images/div63.jpg" alt="image">
+                  <span class="overlay">
+                     <i class="far fa-play-circle"></i>
+                  </span>          
+               </a>
+					<p>Faded</p>
+				</div>
+				<div id="div64">
+					<a href="#music-bar-display">
+                  <img src="images/div64.jpg" alt="image">
+                  <span class="overlay">
+                     <i class="far fa-play-circle"></i>
+                  </span>          
+               </a>
+					<p>Closer</p>
+				</div>
+				<div id="div65">
+					<a href="#music-bar-display">
+                  <img src="images/div65.jpg" alt="image">
+                  <span class="overlay">
+                     <i class="far fa-play-circle"></i>
+                  </span>          
+               </a>
+					<p>Taki Taki</p>
+				</div>
+				<div id="div66">
+					<a href="#music-bar-display">
+                  <img src="images/div66.jpg" alt="image">
+                  <span class="overlay">
+                     <i class="far fa-play-circle"></i>
+                  </span>          
+               </a>
+					<p>Despacito</p>
+				</div>
+			</div>
+
+			<h4>Latest Hindi</h4>
+
+         <!-- Displays Latest Hindi Songs -->
+			<div id="container7">
+				<div id="div71">
+					<a href="#music-bar-display">
+                  <img src="images/div71.jpg" alt="image">
+                  <span class="overlay">
+                     <i class="far fa-play-circle"></i>
+                  </span>          
+               </a>
+					<p>Sun raha hai</p>
+				</div>
+				<div id="div72">
+					<a href="#music-bar-display">
+                  <img src="images/div72.jpg" alt="image">
+                  <span class="overlay">
+                     <i class="far fa-play-circle"></i>
+                  </span>          
+               </a>
+					<p>chahne lage</p>
+				</div>
+				<div id="div73">
+					<a href="#music-bar-display">
+                  <img src="images/div73.jpg" alt="image">
+                  <span class="overlay">
+                     <i class="far fa-play-circle"></i>
+                  </span>          
+               </a>
+					<p>Dilbar</p>
+				</div>
+				<div id="div74">
+					<a href="#music-bar-display">
+                  <img src="images/div74.jpg" alt="image">
+                  <span class="overlay">
+                     <i class="far fa-play-circle"></i>
+                  </span>          
+               </a>
+					<p>Garmi</p>
+				</div>
+				<div id="div75">
+					<a href="#music-bar-display">
+                  <img src="images/div75.jpg" alt="image">
+                  <span class="overlay">
+                     <i class="far fa-play-circle"></i>
+                  </span>          
+               </a>
+					<p>O Saki Saki</p>
+				</div>
+				<div id="div76">
+					<a href="#music-bar-display">
+                  <img src="images/div76.jpg" alt="image">
+                  <span class="overlay">
+                     <i class="far fa-play-circle"></i>
+                  </span>          
+               </a>
+					<p>Morni banke</p>
+				</div>
+			</div>
+			<br>
+		</main>
+
+      <!-- Second section Aside with 29% width default and min-width of 350px is situated on the left side of screen initially. It goes downstairs when the size of screen is greater than 1100px. -->
+		<aside>
+
+         <!-- Aside Section header -->
+			<b style="padding-left: 10px;">Playlist</b>
+			<span class="drop-btn2">
+				Queue &nbsp &darr;
+				<div class="dropdown-content" style="margin-left: 0px;">
+					<a>Playlist</a>
+					<a>Favourite Songs</a>
+				</div>
+			</span>
+
+         <!-- Playlist -->
+			<div class="playlist">
+				<div class="list-item">
+					<a href="#music-bar-display">
+                  <p>01</p>
+                  <img src="images/div21.jpg">
+                  <p>Garmi</p>
+               </a> 
+               <i class="fas fa-heart"></i>                 
+				</div>
+				<div class="list-item">
+               <a href="#music-bar-display">
+                  <p>02</p>
+                  <img src="images/div22.jpg">
+                  <p>Yaad piya Ki</p>
+               </a> 
+               <i class="fas fa-heart"></i>   					
+				</div>
+				<div class="list-item">
+               <a href="#music-bar-display">
+                  <p>03</p>
+                  <img src="images/div23.jpg">
+                  <p>O Saki Saki</p>
+               </a> 
+               <i class="fas fa-heart"></i>   					
+				</div>
+				<div class="list-item">
+               <a href="#music-bar-display">
+                  <p>04</p>
+                  <img src="images/div61.jpg">
+                  <p>On my way</p>
+               </a> 
+               <i class="fas fa-heart"></i>  					
+				</div>
+				<div class="list-item">
+               <a href="#music-bar-display">
+                  <p>05</p>
+                  <img src="images/div62.jpg">
+                  <p>See You again</p>
+               </a> 
+               <i class="fas fa-heart"></i>   					
+				</div>
+				<div class="list-item">
+               <a href="#music-bar-display">
+                  <p>06</p>
+                  <img src="images/div63.jpg">
+                  <p>Faded</p>
+               </a> 
+               <i class="fas fa-heart"></i>   					
+				</div>
+				<div class="list-item">
+               <a href="#music-bar-display">
+                  <p>07</p>
+                  <img src="images/div64.jpg">
+                  <p>Closer</p>
+               </a> 
+               <i class="fas fa-heart"></i>   					
+				</div>
+				<div class="list-item">
+               <a href="#music-bar-display">
+                  <p>08</p>
+                  <img src="images/div65.jpg">
+                  <p>Taki Taki</p>
+               </a> 
+               <i class="fas fa-heart"></i>   					
+				</div>
+				<div class="list-item">
+               <a href="#music-bar-display">
+                  <p>09</p>
+                  <img src="images/div66.jpg">
+                  <p>Despacito</p>
+               </a> 
+               <i class="fas fa-heart"></i>   					
+				</div>
+				<div class="list-item">
+               <a href="#music-bar-display">
+                  <p>10</p>
+                  <img src="images/div73.jpg">
+                  <p>Dilbar</p>
+               </a> 
+               <i class="fas fa-heart"></i>					
+				</div>
+				<div class="list-item">
+               <a href="#music-bar-display">
+                  <p>11</p>
+                  <img src="images/div76.jpg">
+                  <p>Morni Banke</p>
+               </a> 
+               <i class="fas fa-heart"></i>  					
+				</div>
+				<div class="list-item">
+               <a href="#music-bar-display">
+                  <p>12</p>
+                  <img src="images/div71.jpg">
+                  <p>Sun raha haina tu</p>
+               </a> 
+               <i class="fas fa-heart"></i> 					
+				</div>
+				<div class="list-item">
+               <a href="#music-bar-display">
+                  <p>13</p>
+                  <img src="images/div21.jpg">
+                  <p>Garmi</p>
+               </a> 
+               <i class="fas fa-heart"></i>  					
+				</div>
+				<div class="list-item">
+               <a href="#music-bar-display">
+                  <p>14</p>
+                  <img src="images/div22.jpg">
+                  <p>Yaad piya Ki</p>
+               </a> 
+               <i class="fas fa-heart"></i>
+				</div>
+				<div class="list-item">
+               <a href="#music-bar-display">
+                  <p>15</p>
+                  <img src="images/div23.jpg">
+                  <p>O Saki Saki</p>
+               </a> 
+               <i class="fas fa-heart"></i>		
+				</div>
+				<div class="list-item">
+               <a href="#music-bar-display">
+                  <p>16</p>
+                  <img src="images/div61.jpg">
+                  <p>On my way</p>
+               </a> 
+               <i class="fas fa-heart"></i>
+				</div>
+				<div class="list-item">
+               <a href="#music-bar-display">
+                  <p>17</p>
+                  <img src="images/div62.jpg">
+                  <p>See You again</p>
+               </a> 
+               <i class="fas fa-heart"></i>
+				</div>
+				<div class="list-item">
+               <a href="#music-bar-display">
+                  <p>18</p>
+                  <img src="images/div63.jpg">
+                  <p>Faded</p>
+               </a> 
+               <i class="fas fa-heart"></i>
+				</div>
+				<div class="list-item">
+               <a href="#music-bar-display">
+                  <p>19</p>
+                  <img src="images/div64.jpg">
+                  <p>Closer</p>
+               </a> 
+               <i class="fas fa-heart"></i>
+				</div>
+				<div class="list-item">
+               <a href="#music-bar-display">
+                  <p>20</p>
+                  <img src="images/div65.jpg">
+                  <p>Taki Taki</p>
+               </a> 
+               <i class="fas fa-heart"></i>
+				</div>
+				<div class="list-item">
+               <a href="#music-bar-display">
+                  <p>21</p>
+                  <img src="images/div66.jpg">
+                  <p>Despacito</p>
+               </a> 
+               <i class="fas fa-heart"></i>
+				</div>
+				<div class="list-item">
+               <a href="#music-bar-display">
+                  <p>22</p>
+                  <img src="images/div73.jpg">
+                  <p>Dilbar</p>
+               </a> 
+               <i class="fas fa-heart"></i>
+				</div>
+				<div class="list-item">
+               <a href="#music-bar-display">
+                  <p>23</p>
+                  <img src="images/div76.jpg">
+                  <p>Morni Banke</p>
+               </a> 
+               <i class="fas fa-heart"></i>
+				</div>
+				<div class="list-item">
+               <a href="#music-bar-display">
+                  <p>24</p>
+                  <img src="images/div71.jpg">
+                  <p>Sun raha haina</p>
+               </a> 
+               <i class="fas fa-heart"></i>
+				</div>   						
+			</div>
+		</aside>
+   </div>  	
+
+   <!-- Footer Section Containing Music bar which only displays when a song play command is given -->
+   <footer>
+      <div id="music-bar">
+         <div id="music-bar-display">
+            <audio controls loop>
+               <source src="song.mp3" type="audio/mp3">
+                 File Not Supported
+            </audio>
+         </div>      
+      </div>
+   </footer>
+
+
+</body>
+</html>
